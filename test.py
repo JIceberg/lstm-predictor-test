@@ -143,6 +143,6 @@ def evaluate_model(model, data, compute_grad=False, inject_faults=False, plot=Fa
 
 # compute grads first
 evaluate_model(model, train_loader, compute_grad=True)
-# print(model.lstm.mean_grad)
+print(model.lstm.mean_grad)
 
 evaluate_model(model, test_loader, inject_faults=True, plot=True)
